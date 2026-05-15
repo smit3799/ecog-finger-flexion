@@ -44,6 +44,22 @@ The model was trained on Subject 1 data (62 ECoG channels) with 5-fold Stratifie
 > **Note:** The results above reflect the iterative improvement from systematic tuning.
 
 ---
+## 🚀 Usage (Google Colab)
+This project is designed to be executed in **Google Colab** following a two-part sequence to ensure joint optimization of data and model parameters.
+
+### Part 1: Signal Parameter Optimization
+1. Open Google Colab and upload the notebook for **Part 1** (Grid Search).
+2. Upload the two ECoG data files from the repository's `data/` folder to the local Colab session.
+3. Select **"Run all"** to perform the initial grid search.
+4. Note the optimal window size and threshold values obtained from the output.
+
+### Part 2: Model Hyperparameter Tuning
+1. Open Google Colab and upload the notebook for **Part 2** (Bayesian Optimization).
+2. Upload the same two data files to the Colab session.
+3. **Configure Parameters:** Replace the default parameters in Part 2 with the optimal window size and threshold values obtained from Part 1.
+4. Select **"Run all"** to find the final optimized XGBoost hyperparameters and evaluate performance.
+
+---
 
 ## ⚙️ Project Structure & Setup
 ### Dependencies

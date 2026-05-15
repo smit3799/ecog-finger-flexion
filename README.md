@@ -45,6 +45,9 @@ The model was trained on Subject 1 data (62 ECoG channels) with 5-fold Stratifie
 
 ---
 ## 🚀 Usage (Google Colab)
+
+## Note: Due to file size constraints and data privacy, raw ECoG data files are not included in this repository. Please place the 'Miller & Schalk' dataset files into the /data folder locally before running.
+
 This project is designed to be executed in **Google Colab** following a two-part sequence to ensure joint optimization of data and model parameters.
 
 ### Part 1: Signal Parameter Optimization
